@@ -48,4 +48,13 @@ This is how messy our data is
     - Modify the formula to ' 1 - discount percent' to get the correct sales amount
     - Rename the column into 'Sale Amount'
     - Round the sale amounts into two decimal points. ( transform --- rounding --- round)
+ 5. Fixed the 4th issue (Added a column to show the day difference between orderd and ship date)
+    - Select the 'ship date' column first and then 'order date'
+    - In 'Add column' tab goto Date and select 'substract days'
+    - Rename the new column 'Days to Ship'
+ 7. Fixed the 5th issue (Keep the first name of the sales person)
+    - In 'Add Column' tab goto 'Columns from Example' then 'from selection'
+    - In new column in the first raw, give an example of reqired format
+    - check other raws seem to be correct and then apply the rule
+       
       
