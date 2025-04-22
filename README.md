@@ -58,6 +58,18 @@ This is how messy our data is
     - check other raws seem to be correct and then apply the rule
  8. Removed 'Not Specified' data in OrderPriority column
 
+To add the cleaning steps to the original data set from the sample data, the last step of the 'data' file has to be removed. This is because the column names are what before the column headers are changed. So the 
+'Change type' step has to be removed from the 'data' query. Then delete the 'Source Name' column which indicates the original source of the data before they were merged. Finally, select all the columns and apply 'Detect Data type' to ensure the data types of each column.
+
+## Load Data
+ - Select 'Close & Load To' option
+ - Select the 'PivotTable report' option to load the data into the pivot cache
+ - Group the columns by ' Order priority' and see how sale Amount changes with the time
+ - Add a line chart to see the trend
+
+## Adding New data files
+Add the 2020 sales data to the 'sale' folder. Then refresh the queries to grab the new file from the folder, run through all the transformation steps and load into Pivot cache. At the sametime this will automatically update the pivot table and the pivot chart. 
+
     
        
       
