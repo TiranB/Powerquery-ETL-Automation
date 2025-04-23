@@ -29,15 +29,15 @@ This is how messy our data is
 
 ### Issues in the data
  1. Header Formatting: Column headers are split across two rows, requiring consolidation.
- 2. Combined Attributes: *Shipping Mode* and *Container Type8 are stored in a single column, making it difficult to analyze them separately.
+ 2. Combined Attributes: *Shipping Mode* and *Container Type* are stored in a single column, making it difficult to analyze them separately.
  3. Missing Derived Metric: While *Order Quantity*, *Unit Sell Price*, and *Discount Percent* are available, the *Sales Amount* column is missing and needs to be calculated.
  4. Lack of Shipping Lead Time: There's no column indicating the number of days between the order date and Shipping date, which is critical for logistics analysis.
  5. Inconsistent Naming Convention: The *SalesPerson* names include formal prefixes (e.g., Mr., Mrs.), which should be standardized for better data clarity and consistency.
    
 ### Data Cleaning Steps
- 1. Selected the 'Transform Sample File' in 'Helping Queries' window
+ 1. Selected the *Transform Sample File* in *Helping Queries* window
  2. Fixed Header Formatting Issue
-    - Removed the automatically applied 'Promoted Headers' step from the Applied Steps panel.
+    - Removed the automatically applied *Promoted Headers* step from the Applied Steps panel.
     - Transposed the table to separate the two header rows into distinct columns.
     - Merge the first two columns(header components) into a single column
     - Transpose the data back
@@ -50,12 +50,12 @@ This is how messy our data is
     - Used the Add Column > Standard > Multiply option to create a calculated column.
     - Adjusted the formula to apply the discount correctly:
       (Sales Amount = Order Quantity × Unit Sell Price × (1 - Discount Percent))
-    - Rename the column into 'Sale Amount'
+    - Rename the column into *Sale Amount*
     - Round the sale amounts into two decimal points. ( transform --- rounding --- round)
  5. Added Days to Ship Column
-    - Select the 'ship date' column first and then 'order date'
+    - Select the *ship date* column first and then *order date*
     - Used Add Column > Date > Subtract Days to calculate the time taken to ship.
-    - Rename the new column 'Days to Ship'
+    - Rename the new column *Days to Ship*
  6. Standardized SalesPerson Names
     - Used Add Column > Column from Examples > From Selection.
     - Provided an example (e.g., just the first name without titles like "Mr", "Mrs") in the first row.
@@ -63,12 +63,12 @@ This is how messy our data is
  8. Filtered out rows where Order Priority was listed as "Not Specified", improving data quality for priority-based analysis.
 
 To add the cleaning steps to the original data set from the sample data, the last step of the 'data' file has to be removed. This is because the column names are what before the column headers are changed. So the 
-'Change type' step has to be removed from the 'data' query. Then delete the 'Source Name' column which indicates the original source of the data before they were merged. Finally, select all the columns and apply 'Detect Data type' to ensure the data types of each column.
+'Change type' step has to be removed from the 'data' query. Then delete the 'Source Name' column which indicates the original source of the data before they were merged. Finally, select all the columns and apply *'Detect Data type'* to ensure the data types of each column.
 
 ## 📤 Load Data
- - Select 'Close & Load To' option
- - Select the 'PivotTable report' option to load the data into the pivot cache
- - Group the columns by ' Order priority' and see how sale Amount changes with the time
+ - Select *Close & Load To* option
+ - Select the *PivotTable report* option to load the data into the pivot cache
+ - Group the columns by *Order priority* and see how sale Amount changes with the time
  - Add a line chart to see the trend
 
 ## Adding New data files
