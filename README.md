@@ -25,7 +25,7 @@ Sales Data Coverage -Years 2017,2018,2019
 
 ## 🛠️ Transforming Data (Data Cleaning Process)
 This is how messy our data is
-
+![Data Preview before transformation](https://github.com/TiranB/Powerquery-ETL-Automation/commit/924eae175555d9822506bcba915635fcee9ec6ce)
 ### Issues in the data
  1. Header Formatting: Column headers are split across two rows, requiring consolidation.
  2. Combined Attributes: "Shipping Mode" and "Container Type" are stored in a single column, making it difficult to analyze them separately.
