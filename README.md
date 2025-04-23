@@ -12,14 +12,14 @@ The transformed data is loaded into the Pivot Table Cache for efficient and inte
 This semi-automated solution reduces manual work, improves consistency, and enables timely insights with minimal effort.
 
 ## Meta Data
-Data source - Imported from 'Sales' Folder
+Data source - Imported from *Sales* Folder
 Number of Files Imported - 3 Files
 Sales Data Coverage -Years 2017,2018,2019
 
 ## 🔍 Extracting Data (Data Importing Process)
 - In Excel choose get data from a folder
 - choose the folder
-- Select 'Combine and transform data'
+- Select *Combine and transform data*
 
   Now the three files of sales data were combined into  one file and imported into the Power Query Editor
 
@@ -29,10 +29,10 @@ This is how messy our data is
 
 ### Issues in the data
  1. Header Formatting: Column headers are split across two rows, requiring consolidation.
- 2. Combined Attributes: "Shipping Mode" and "Container Type" are stored in a single column, making it difficult to analyze them separately.
- 3. Missing Derived Metric: While "Order Quantity", "Unit Sell Price", and "Discount Percent" are available, the "Sales Amount" column is missing and needs to be calculated.
+ 2. Combined Attributes: *Shipping Mode* and *Container Type8 are stored in a single column, making it difficult to analyze them separately.
+ 3. Missing Derived Metric: While *Order Quantity*, *Unit Sell Price*, and *Discount Percent* are available, the *Sales Amount* column is missing and needs to be calculated.
  4. Lack of Shipping Lead Time: There's no column indicating the number of days between the order date and Shipping date, which is critical for logistics analysis.
- 5. Inconsistent Naming Convention: The "SalesPerson" names include formal prefixes (e.g., Mr., Mrs.), which should be standardized for better data clarity and consistency.
+ 5. Inconsistent Naming Convention: The *SalesPerson* names include formal prefixes (e.g., Mr., Mrs.), which should be standardized for better data clarity and consistency.
    
 ### Data Cleaning Steps
  1. Selected the 'Transform Sample File' in 'Helping Queries' window
