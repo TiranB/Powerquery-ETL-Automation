@@ -25,7 +25,7 @@ Sales Data Coverage -Years 2017,2018,2019
 
 ## 🛠️ Transforming Data (Data Cleaning Process)
 This is how messy our data is
-![Data Preview before transformation](https://github.com/TiranB/Powerquery-ETL-Automation/commit/924eae175555d9822506bcba915635fcee9ec6ce)
+![Data Preview before transformation](https://github.com/TiranB/Powerquery-ETL-Automation/blob/main/Messy%20data.JPG?raw=true)
 
 ### Issues in the data
  1. Header Formatting: Column headers are split across two rows, requiring consolidation.
